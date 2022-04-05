@@ -1,0 +1,56 @@
+@import 'styles/_variables';
+
+.slider {
+    margin: 20px auto;
+    width: 100%;
+    position: relative;
+
+    .wrapper {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    .textBlock{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1320px;
+        max-width: 100%;
+        z-index: 50;
+        .text{
+            color: #282828;
+        }
+    }
+
+    .slides {
+        width: 70%;
+        transition: 0.5s all linear;
+        will-change: transform;
+    }
+
+    .arrows {
+        position: absolute;
+        top: 45%;
+        background: none;
+        height: 60px;
+        border: 0;
+        cursor: pointer;
+        transition: ease 0.3s all;
+        outline: none;
+
+        &.prev {
+            left: -70px;
+        }
+
+        &.next {
+            right: -70px;
+        }
+    }
+
+    .slide {
+        margin: 0 auto;
+        width: 100vw;
+        float: left;
+    }
+}

@@ -1,0 +1,29 @@
+@import 'styles/_variables';
+
+.header {
+    .body {
+        height: 80px;
+        width: 1320px;
+        display: flex;
+        margin: 0 auto;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        align-items: center;
+        justify-content: center;
+        gap: 90px;
+    }
+    .logo {
+        position: relative;
+    }
+    .menu{
+        display: flex;
+        gap: 30px;
+        .item{
+            cursor: pointer;
+        }
+    }
+    .hr{
+        width: 100%;
+        border: 1px #9193999d solid;
+    }
+}
